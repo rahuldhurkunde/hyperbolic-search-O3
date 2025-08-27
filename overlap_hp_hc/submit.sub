@@ -1,0 +1,13 @@
+universe = vanilla
+executable = run_injections.sh
+arguments = $(Process)
+log = logs/job_$(Process).log
+output = logs/job_$(Process).out
+error = logs/job_$(Process).err
+transfer_input_files = injection_vmax.hdf, run_inj.py
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+request_cpus = 1
+request_memory = 2GB
+
+queue 100
