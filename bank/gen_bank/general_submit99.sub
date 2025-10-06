@@ -1,0 +1,18 @@
+executable   = path/to/general_run99.sh
+arguments    = "path/to/bank_prior.ini path/to/bank99_start-value-end-value.hdf"
+
+
+error        = error_bank99_start-value-end-value.txt
+log          = log_bank99_start-value-end-value.txt
+output = out_bank99_start-value-end-value.txt
+getenv = True
+
+universe = vanilla
+request_cpus = 32
+request_disk =  10000
+request_memory = 20000
+
+should_transfer_files = yes
+when_to_transfer_output = on_exit
+
+queue
